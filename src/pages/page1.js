@@ -2,6 +2,7 @@ import React from 'react'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import Fade from 'react-reveal/Fade';
 
 const Page1 = () => {
     const settings = {
@@ -30,13 +31,14 @@ const Page1 = () => {
     return (
         <div style={{margin: "0px 50px" }}>
       <Slider {...settings} className="sliderhero">{renderSlides()}</Slider>
-
+      <Fade bottom>
       <h1 style={{marginTop: "70px"}}>What is Eureka?</h1>
         <div className="homecont">About Eureka!!</div>
-
+      </Fade>
+      <Fade bottom>
       <h1 style={{marginTop: "70px"}}>Our Vision</h1>
       <div className="homecont">Vision!!</div>
-
+      </Fade>
       <div className="stats">
           <ul>
               <li>Stat 1</li>
