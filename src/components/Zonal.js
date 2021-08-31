@@ -15,6 +15,7 @@ const Zonal = ({ zone }) => {
            
                 </p>
             </div>
+            <br></br>
         </div>
     )
 }
