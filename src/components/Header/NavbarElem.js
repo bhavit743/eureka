@@ -1,7 +1,9 @@
 import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
-
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import Tab from "./Tab";
 export const Nav = styled.nav`
   background: #000;
   height: 80px;
@@ -52,7 +54,13 @@ export const NavMenu = styled.div`
   @media screen and (max-width: 768px) {
     display: block;
     background-color: black;
+    transition: 0.5s ease all;
     transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
+    margin-right: 0px;
+    padding-right: 10px;
+    position: absolute;
+    right: 0px;
+    top: 100px;
   }
 `
 ;
@@ -87,3 +95,58 @@ export const NavBtnLink = styled(Link)`
     color: #010606;
   }
 `;
+
+
+
+class Tabs extends Component {
+  static propTypes = {
+    children: PropTypes.instanceOf(Array).isRequired,
+  };
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      activeTab: this.props.children[0].props.label,
+    };
+  }
+
+  onClickTabItem = (tab) => {
+    this.setState({ activeTab: tab });
+  };
+
+  render() {
+    const {
+      onClickTabItem,
+      props: { children },
+      state: { activeTab },
+    } = this;
+
+    return (
+      <div className="tabs">
+        <ol className="tab-list">
+          {children.map((child) => {
+            const { label } = child.props;
+
+            return (
+              <Tab
+                activeTab={activeTab}
+                key={label}
+                label={label}
+                onClick={onClickTabItem}
+              />
+            );
+          })}
+        </ol>
+        <div className="tab-content">
+          {children.map((child) => {
+            if (child.props.label !== activeTab) return undefined;
+            return child.props.children;
+          })}
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Tabs;
