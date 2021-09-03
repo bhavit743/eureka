@@ -51,7 +51,8 @@ const App = () => {
     <Router>
     {/* <Header /> */}
     <div>
-  <Incentives />
+  {/* <Incentives /> */}
+  <Page1 />
     {/* <Tracks tracks={tracks} /> */}
     {/* <Zonals zones={zones} /> */}
   {/* <Competition /> */}
