@@ -108,6 +108,12 @@ const Header = () => {
                 <NavLink to="/page4" id="page4" activeStyle onClick={handleToggle7}>
                     <BsFillClockFill /><h1 className={isActive7 ? "nava" : "navac"}>page7</h1>
                 </NavLink> 
+                <NavLink to="/page4" id="Competition" activeStyle onClick={() => setActive(!isActive)}>
+                    <BsFillClockFill /><h1 className={isActive ? "nava" : "navac"}>Competition</h1>
+                </NavLink> 
+                <NavLink to="/page4" id="page4" activeStyle onClick={() => setActive(!isActive)}>
+                    <BsFillClockFill /><h1 className={isActive ? "nava" : "navac"}>Tracks</h1>
+                </NavLink> 
             </NavMenu>
             {/* <Tabs>
         <div label="Gator">

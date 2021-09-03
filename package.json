@@ -7,18 +7,32 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.1.0",
+<<<<<<< HEAD
     "gsap": "^3.7.1",
+=======
+    "create-react-class": "^15.7.0",
+    "mdb-react-ui-kit": "^1.3.0",
+>>>>>>> ca273deb6368c80dea2a9b25fd44e0eb7dacda62
     "react": "^17.0.2",
+    "react-bootstrap": "^2.0.0-beta.6",
     "react-bootstrap-validation": "^0.1.11",
     "react-carousel-minimal": "^1.3.4",
+    "react-collapsible": "^2.8.3",
     "react-countup": "^5.2.0",
     "react-dom": "^17.0.2",
+    "react-feather": "^2.0.9",
     "react-icons": "^4.2.0",
+    "react-native": "^0.65.1",
+    "react-native-web": "^0.17.1",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.1",
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.1",
+<<<<<<< HEAD
     "react-use": "^17.3.1",
+=======
+    "react-spring": "^9.2.4",
+>>>>>>> ca273deb6368c80dea2a9b25fd44e0eb7dacda62
     "react-visibility-sensor": "^5.1.1",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.1",

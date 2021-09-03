@@ -49,23 +49,23 @@ const App = () => {
   ])
   return (
     <Router>
-    <Header />
+    {/* <Header /> */}
     <div>
+  <Incentives />
     {/* <Tracks tracks={tracks} /> */}
     {/* <Zonals zones={zones} /> */}
   {/* <Competition /> */}
     </div>
    
-   <Switch>
+   {/* <Switch>
      <Route path='/' exact component={Home} />
-     <Route path='/page1' exact component={Page1} />  
+     <Route path='/page1' exact component={Page1} />   
      <Route path='/page2' exact component={Page2} />
      <Route path='/page3' exact component={Page3} />  
-     <Route path='/page4' exact component={Page4} />    
-     <Route path='/compi' exact component={Competition} />    
-     <Route path='/tracks' exact component={Tracks} />    
-     <Route path='/zonals' exact component={Zonals} />    
-   </Switch>
+     <Route path='/page4' exact component={Page4} />   
+     <Route path='/Competition ' exact component={Competition} />
+     <Route path='/page4' exact component={Page4} /> 
+   </Switch> */}
    </Router>
   )
 }
